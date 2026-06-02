@@ -2,13 +2,31 @@
    PORTFON PORTFOLIO — SCRIPT
 =========================== */
 
-// --- Navbar scroll effect ---
+// --- Navbar & Scroll effects ---
 const navbar = document.getElementById('navbar');
+const scrollProgress = document.getElementById('scroll-progress');
+const bgText = document.querySelector('.hero-bg-text');
+
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 30) {
+  const scrollY = window.scrollY;
+
+  // Navbar shadow on scroll
+  if (scrollY > 30) {
     navbar.classList.add('scrolled');
   } else {
     navbar.classList.remove('scrolled');
+  }
+
+  // Scroll Progress indicator
+  if (scrollProgress) {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = totalHeight > 0 ? (scrollY / totalHeight) * 100 : 0;
+    scrollProgress.style.width = progress + '%';
+  }
+
+  // Parallax background text movement
+  if (bgText) {
+    bgText.style.transform = `translate(-50%, calc(-50% + ${scrollY * 0.22}px))`;
   }
 });
 
@@ -25,7 +43,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 // --- Scroll reveal / fade-up animation ---
 const fadeUpEls = document.querySelectorAll(
-  '.hero-content, .hero-stats, .about-grid, .project-card, .service-card, .testi-card, .cta-heading, .footer-nav-card, .section-label, .section-heading'
+  '.about-grid, .project-card, .service-card, .testi-card, .cta-heading, .footer-nav-card, .section-label, .section-heading, .skill-card'
 );
 
 fadeUpEls.forEach(el => {
@@ -166,16 +184,18 @@ document.querySelectorAll('.footer-nav-card').forEach((card, i) => {
 console.log('✦ Portfon Portfolio loaded successfully');
 
 // --- Skill bar animation on scroll ---
-const skillFills = document.querySelectorAll('.skill-bar-fill');
+const skillFills = document.querySelectorAll('.skill-card__progress-fill');
 const skillObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const fill = entry.target;
-      const targetWidth = fill.style.width;
-      fill.style.width = '0';
-      setTimeout(() => { fill.style.width = targetWidth; }, 100);
+      const targetWidth = fill.getAttribute('data-w') + '%';
+      fill.style.width = targetWidth;
       skillObserver.unobserve(fill);
     }
   });
-}, { threshold: 0.3 });
-skillFills.forEach(f => skillObserver.observe(f));
+}, { threshold: 0.15 });
+skillFills.forEach(f => {
+  f.style.width = '0%';
+  skillObserver.observe(f);
+});
