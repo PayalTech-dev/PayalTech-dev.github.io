@@ -1,785 +1,711 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="VASAVADA PAYAL - UI/UX Designer from Amreli, Gujarat, India. Skilled in Figma, wireframing, prototyping, responsive design, HTML5, CSS3, and JavaScript."
-    />
-    <meta
-      name="keywords"
-      content="VASAVADA PAYAL, UI UX Designer, Figma Designer, Web Designer, BCA Student, Gujarat, Portfolio, Wireframing, Prototyping"
-    />
-    <meta name="author" content="VASAVADA PAYAL" />
-    <title>VASAVADA PAYAL | UI/UX Designer</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
-      <div class="nav-logo">
-        <div class="nav-logo-icon">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            stroke-width="2"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-          </svg>
-        </div>
-        <span>Payal Vasavada</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="VASAVADA PAYAL - UI/UX Designer from Amreli, Gujarat, India. Skilled in Figma, wireframing, prototyping, responsive design, HTML5, CSS3, and JavaScript." />
+  <meta name="keywords"
+    content="VASAVADA PAYAL, UI UX Designer, Figma Designer, Web Designer, BCA Student, Gujarat, Portfolio, Wireframing, Prototyping" />
+  <meta name="author" content="VASAVADA PAYAL" />
+  <title>VASAVADA PAYAL | UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@400;500;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+</head>
+
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+        </svg>
       </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-cta">
+      <span>Payal Vasavada</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="mailto:payalvasavada81@gmail.com">
+        <button class="btn-cta">
+          Get In Touch <span class="btn-arrow">→</span>
+        </button>
+      </a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <!-- Animated background blobs & overlay grid -->
+    <div class="hero-bg-blob blob-blue"></div>
+    <div class="hero-bg-blob blob-purple"></div>
+    <div class="hero-bg-blob blob-teal"></div>
+    <div class="hero-bg-grid"></div>
+
+    <div class="hero-bg-text">DESIGNER</div>
+
+    <div class="hero-image-wrap">
+      <div class="hero-avatar-circle">
+        <img src="hero.jpeg" alt="Payal Vasavada - UI/UX Designer" class="hero-avatar" />
+      </div>
+      <div class="floating-tag tag-1">UI/UX Design</div>
+      <div class="floating-tag tag-2">Figma Expert</div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-title">
+        VASAVADA PAYAL<br /><span style="font-size: 0.55em; font-weight: 600; opacity: 0.7">UI/UX &amp; Figma
+          Designer</span>
+      </h1>
+      <div class="hero-actions">
         <a href="mailto:payalvasavada81@gmail.com">
-          <button class="btn-cta">
-            Get In Touch <span class="btn-arrow">→</span>
+          <button class="btn-primary">
+            Get In Touch <span class="btn-moon">◑</span>
           </button>
         </a>
       </div>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-label">Design Skills<br />Mastered</div>
+        <div class="stat-number">8+</div>
       </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
-      <div class="hero-bg-text">DESIGNER</div>
-
-      <div class="hero-image-wrap">
-        <div class="hero-avatar-circle">
-          <img
-            src="hero.jpeg"
-            alt="Payal Vasavada - UI/UX Designer"
-            class="hero-avatar"
-          />
-        </div>
-        <div class="floating-tag tag-1">UI/UX Design</div>
-        <div class="floating-tag tag-2">Figma Expert</div>
+      <div class="stat-card">
+        <div class="stat-label">Projects<br />Completed</div>
+        <div class="stat-number">4+</div>
       </div>
+    </div>
+  </section>
 
-      <div class="hero-content">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-title">
-          VASAVADA PAYAL<br /><span
-            style="font-size: 0.55em; font-weight: 600; opacity: 0.7"
-            >UI/UX &amp; Product Designer</span
-          >
-        </h1>
-        <div class="hero-actions">
-          <a href="mailto:payalvasavada81@gmail.com">
-            <button class="btn-primary">
-              Get In Touch <span class="btn-moon">◑</span>
-            </button>
-          </a>
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="section-label"><span class="star-icon">✦</span> About Me</div>
+
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="about-photo-wrap">
+          <img src="hero.jpeg" alt="Payal Vasavada" class="about-photo" />
         </div>
       </div>
 
-      <div class="hero-stats">
-        <div class="stat-card">
-          <div class="stat-label">Design Skills<br />Mastered</div>
-          <div class="stat-number">8+</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Projects<br />Completed</div>
-          <div class="stat-number">4+</div>
-        </div>
-      </div>
-    </section>
+      <div class="about-right">
+        <h2 class="about-heading">
+          I create user-friendly digital experiences that combine
+          functionality, simplicity, and strong visual appeal.
+        </h2>
+        <a href="mailto:payalvasavada81@gmail.com">
+          <button class="btn-dark">
+            Get In Touch <span class="btn-moon">◑</span>
+          </button>
+        </a>
 
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about">
-      <div class="section-label"><span class="star-icon">✦</span> About Me</div>
-
-      <div class="about-grid">
-        <div class="about-left">
-          <div class="about-photo-wrap">
-            <img src="hero.jpeg" alt="Payal Vasavada" class="about-photo" />
+        <div class="about-cards">
+          <div class="about-stat-card">
+            <div class="about-stat-num">86%</div>
+            <div class="about-stat-label">BCA — Saurashtra University</div>
+            <div class="about-avatars">
+              <strong>Completed BCA from Saurashtra University, Rajkot with a focus
+                on digital design, creativity, and user experiences.</strong>
+              <!-- <img src="https://i.pravatar.cc/40?img=45" alt="" />
+                  <img src="https://i.pravatar.cc/40?img=22" alt="" />
+                  <img src="https://i.pravatar.cc/40?img=37" alt="" />
+                  <img src="https://i.pravatar.cc/40?img=54" alt="" /> -->
+            </div>
+            <div class="about-rating">
+              <span class="star-gold">★</span> Top Graduate
+            </div>
+          </div>
+          <div class="about-skills-card">
+            <h3>User-Centered,<br />Visually Refined.</h3>
+            <div class="skill-tags">
+              <span>Wireframing &amp; Prototyping</span>
+              <span>Responsive Design</span>
+              <span>Figma &amp; Frontend Dev</span>
+            </div>
+            <div class="branding-label">Gujarat, India</div>
           </div>
         </div>
 
-        <div class="about-right">
-          <h2 class="about-heading">
-            I create user-friendly digital experiences that combine
-            functionality, simplicity, and strong visual appeal.
-          </h2>
-          <a href="mailto:payalvasavada81@gmail.com">
-            <button class="btn-dark">
-              Get In Touch <span class="btn-moon">◑</span>
-            </button>
-          </a>
-
-          <div class="about-cards">
-            <div class="about-stat-card">
-              <div class="about-stat-num">86%</div>
-              <div class="about-stat-label">BCA — Saurashtra University</div>
-              <div class="about-avatars">
-                <img src="https://i.pravatar.cc/40?img=45" alt="" />
-                <img src="https://i.pravatar.cc/40?img=22" alt="" />
-                <img src="https://i.pravatar.cc/40?img=37" alt="" />
-                <img src="https://i.pravatar.cc/40?img=54" alt="" />
-              </div>
-              <div class="about-rating">
-                <span class="star-gold">★</span> Top Graduate
-              </div>
-            </div>
-            <div class="about-skills-card">
-              <h3>User-Centered,<br />Visually Refined.</h3>
-              <div class="skill-tags">
-                <span>Wireframing &amp; Prototyping</span>
-                <span>Responsive Design</span>
-                <span>Figma &amp; Frontend Dev</span>
-              </div>
-              <div class="branding-label">Gujarat, India</div>
-            </div>
-          </div>
-
-          <div
-            class="about-bio"
-            style="
+        <div class="about-bio" style="
               margin-top: 24px;
               color: #6b7280;
               line-height: 1.8;
               font-size: 0.92rem;
-            "
-          >
-            <p>
-              I'm a creative and detail-oriented
-              <strong>UI/UX Designer</strong> with a
-              <strong>BCA degree</strong> from Saurashtra University, Rajkot. My
-              strengths include wireframing, prototyping, responsive web design,
-              and user-centered interfaces. I work mainly with
-              <strong>Figma</strong> and have practical knowledge of
-              <strong>HTML5, CSS3, and JavaScript</strong>.
-            </p>
-          </div>
+            ">
+          <p>
+            I'm a creative and detail-oriented
+            <strong>UI/UX Designer</strong> with a
+            <strong>BCA degree</strong> from Saurashtra University, Rajkot. My
+            strengths include wireframing, prototyping, responsive web design,
+            and user-centered interfaces. I work mainly with
+            <strong>Figma</strong> and have practical knowledge of
+            <strong>HTML5, CSS3, and JavaScript</strong>.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SKILLS SECTION -->
-    <section class="skills-section" id="skills">
-      <div class="section-label center">
-        <span class="star-icon">✦</span> My Expertise
-      </div>
-      <h2 class="section-heading center">Technical Skills</h2>
+  <section class="skills-minimal" id="skills">
+    <div class="skills-minimal__head">
+      <span class="skills-minimal__tag">My Skills</span>
+      <h2>Skills & Expertise</h2>
+      <p>A comprehensive look at my design and technical skill set.</p>
+    </div>
 
-      <div class="skills-panel">
-        <div class="skills-summary">
-          <span class="skills-tag">Design + Frontend</span>
-          <h3 class="skills-subtitle">
-            Building polished interfaces, smart interactions, and launch-ready experiences.
-          </h3>
-          <div class="skills-metrics">
-            <div class="skills-metric-card">
-              <span>8+</span>
-              <p>Design skills mastered</p>
-            </div>
-            <div class="skills-metric-card">
-              <span>90%</span>
-              <p>Design quality rating</p>
-            </div>
-            <div class="skills-metric-card">
-              <span>4+</span>
-              <p>Projects shipped</p>
-            </div>
+    <div class="skills-grid-container">
+      <!-- Figma Card -->
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon-wrapper figma-grad">
+            <i class="fa-brands fa-figma"></i>
+          </div>
+          <span class="skill-card__badge">Expert</span>
+        </div>
+        <div class="skill-card__content">
+          <h3 class="skill-card__title">Figma</h3>
+          <p class="skill-card__desc">Creating high-fidelity UI designs, cohesive design systems, advanced auto-layouts,
+            and component libraries.</p>
+        </div>
+        <div class="skill-card__progress-container">
+          <div class="skill-card__progress-info">
+            <span>Proficiency</span>
+            <span>92%</span>
+          </div>
+          <div class="skill-card__progress-bar">
+            <span class="skill-card__progress-fill" data-w="92" style="width: 0%"></span>
           </div>
         </div>
-
-        <div class="skills-tech-grid">
-          <span class="skill-chip">Figma</span>
-          <span class="skill-chip">Wireframing</span>
-          <span class="skill-chip">Prototyping</span>
-          <span class="skill-chip">Responsive Web</span>
-          <span class="skill-chip">HTML5</span>
-          <span class="skill-chip">CSS3</span>
-          <span class="skill-chip">JavaScript</span>
-          <span class="skill-chip">Interaction Design</span>
+        <div class="skill-card__tags">
+          <span class="skill-card__tag">Auto-Layout</span>
+          <span class="skill-card__tag">Design Systems</span>
+          <span class="skill-card__tag">Components</span>
+          <span class="skill-card__tag">Variables</span>
         </div>
       </div>
 
-      <div class="skills-showcase">
-        <div class="skill-row-card">
-          <div class="skill-row-head">
-            <div class="skill-row-label">UI/UX Design</div>
-            <div class="skill-row-caption">User flow, layout systems, and interface polish.</div>
+      <!-- Wireframing Card -->
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon-wrapper wireframe-grad">
+            <i class="fa-solid fa-sitemap"></i>
           </div>
-          <div class="skill-bars">
-            <div class="skill-bar-item">
-              <span>Wireframing</span>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width: 90%"></div>
-              </div>
-              <span class="skill-pct">90%</span>
-            </div>
-            <div class="skill-bar-item">
-              <span>Prototyping</span>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width: 88%"></div>
-              </div>
-              <span class="skill-pct">88%</span>
-            </div>
-            <div class="skill-bar-item">
-              <span>Responsive Design</span>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width: 85%"></div>
-              </div>
-              <span class="skill-pct">85%</span>
-            </div>
-            <div class="skill-bar-item">
-              <span>Interaction Design</span>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width: 82%"></div>
-              </div>
-              <span class="skill-pct">82%</span>
-            </div>
-            <div class="skill-bar-item">
-              <span>User Research</span>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width: 75%"></div>
-              </div>
-              <span class="skill-pct">75%</span>
-            </div>
+          <span class="skill-card__badge">Advanced</span>
+        </div>
+        <div class="skill-card__content">
+          <h3 class="skill-card__title">Wireframing</h3>
+          <p class="skill-card__desc">Structuring user-centered concepts, information architecture, intuitive user
+            flows, and low-fidelity layouts.</p>
+        </div>
+        <div class="skill-card__progress-container">
+          <div class="skill-card__progress-info">
+            <span>Proficiency</span>
+            <span>90%</span>
+          </div>
+          <div class="skill-card__progress-bar">
+            <span class="skill-card__progress-fill" data-w="90" style="width: 0%"></span>
           </div>
         </div>
-
-        <div class="skill-row-card skill-row-alt">
-          <div class="skill-row-head">
-            <div class="skill-row-label">Tools &amp; Frontend</div>
-            <div class="skill-row-caption">Modern tools and front-end foundations.</div>
-          </div>
-          <div class="skill-bars">
-            <div class="skill-bar-item">
-              <span>Figma</span>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width: 92%"></div>
-              </div>
-              <span class="skill-pct">92%</span>
-            </div>
-            <div class="skill-bar-item">
-              <span>Canva</span>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width: 85%"></div>
-              </div>
-              <span class="skill-pct">85%</span>
-            </div>
-            <div class="skill-bar-item">
-              <span>HTML5</span>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width: 85%"></div>
-              </div>
-              <span class="skill-pct">85%</span>
-            </div>
-            <div class="skill-bar-item">
-              <span>CSS3</span>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width: 82%"></div>
-              </div>
-              <span class="skill-pct">82%</span>
-            </div>
-            <div class="skill-bar-item">
-              <span>JavaScript</span>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width: 75%"></div>
-              </div>
-              <span class="skill-pct">75%</span>
-            </div>
-          </div>
+        <div class="skill-card__tags">
+          <span class="skill-card__tag">User Flows</span>
+          <span class="skill-card__tag">Info Architecture</span>
+          <span class="skill-card__tag">Sitemaps</span>
+          <span class="skill-card__tag">Low-Fi Layouts</span>
         </div>
       </div>
-    </section>
 
-    <!-- PORTFOLIO / PROJECTS SECTION -->
-    <section class="portfolio-section" id="portfolio">
-      <div class="section-label center">
-        <span class="star-icon">✦</span> My Work
-      </div>
-      <h2 class="section-heading center">
-        Projects That<br />Delivered Real Impact
-      </h2>
-
-      <div class="projects">
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-name">Donut Website UI Design</h3>
-            <span class="project-num">01</span>
+      <!-- Prototyping Card -->
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon-wrapper prototype-grad">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
           </div>
-          <div class="project-body">
-            <div class="project-desc">
-              <p class="project-meta">
-                Website UI Design &nbsp;·&nbsp; Jan 2026
-              </p>
-              <p>
-                Designed a responsive and visually engaging donut brand website
-                UI in Figma, focusing on modern layouts, colorful branding,
-                user-friendly navigation, and interactive product presentation.
-                Created multiple themed landing page concepts to enhance visual
-                appeal and user experience.
-              </p>
-              <div class="project-tags-row">
-                <span class="ptag">Figma</span>
-                <span class="ptag">Website UI</span>
-                <span class="ptag">Responsive Design</span>
-                <span class="ptag">Prototype</span>
-              </div>
-              <div class="project-btns">
-                <button class="btn-dark">Explore Project</button>
-                <button class="btn-icon">→</button>
-              </div>
-            </div>
-            <div class="project-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&q=80"
-                alt="Donut Website UI"
-                class="project-img"
-              />
-              <div class="project-cursor">◉</div>
-            </div>
+          <span class="skill-card__badge">Advanced</span>
+        </div>
+        <div class="skill-card__content">
+          <h3 class="skill-card__title">Prototyping</h3>
+          <p class="skill-card__desc">Building interactive, clickable prototypes with smart animate transitions to
+            simulate real product behaviors.</p>
+        </div>
+        <div class="skill-card__progress-container">
+          <div class="skill-card__progress-info">
+            <span>Proficiency</span>
+            <span>88%</span>
+          </div>
+          <div class="skill-card__progress-bar">
+            <span class="skill-card__progress-fill" data-w="88" style="width: 0%"></span>
           </div>
         </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-name">Food Delivery Mobile App</h3>
-            <span class="project-num">02</span>
-          </div>
-          <div class="project-body">
-            <div class="project-desc">
-              <p class="project-meta">
-                Mobile App UI Design &nbsp;·&nbsp; Feb 2026 &nbsp;·&nbsp; Zomato
-                Inspired
-              </p>
-              <p>
-                Designed a responsive food delivery mobile app UI in Figma with
-                interactive prototyping, user-friendly navigation, clean visual
-                hierarchy, and modern mobile interface design. Developed screens
-                for browsing, product details, cart management, and checkout
-                experience.
-              </p>
-              <div class="project-tags-row">
-                <span class="ptag">Figma</span>
-                <span class="ptag">Mobile UI</span>
-                <span class="ptag">Prototyping</span>
-                <span class="ptag">User Flow</span>
-              </div>
-              <div class="project-btns">
-                <button class="btn-dark">Explore Project</button>
-                <button class="btn-icon">→</button>
-              </div>
-            </div>
-            <div class="project-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=600&q=80"
-                alt="Food Delivery App"
-                class="project-img"
-              />
-              <div class="project-cursor">◉</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-name">Travel Landing Page</h3>
-            <span class="project-num">03</span>
-          </div>
-          <div class="project-body">
-            <div class="project-desc">
-              <p class="project-meta">Landing Page UI &nbsp;·&nbsp; Apr 2026</p>
-              <p>
-                Created a responsive travel website landing page in Figma with
-                modern UI components, destination-focused visuals, clean
-                navigation, and interactive booking interface design for
-                enhanced user experience.
-              </p>
-              <div class="project-tags-row">
-                <span class="ptag">Figma</span>
-                <span class="ptag">Landing Page</span>
-                <span class="ptag">Responsive UI</span>
-                <span class="ptag">Visual Design</span>
-              </div>
-              <div class="project-btns">
-                <button class="btn-dark">Explore Project</button>
-                <button class="btn-icon">→</button>
-              </div>
-            </div>
-            <div class="project-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&q=80"
-                alt="Travel Landing Page"
-                class="project-img"
-              />
-              <div class="project-cursor">◉</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-name">Smoothie Canned Drink UI Design</h3>
-            <span class="project-num">04</span>
-          </div>
-          <div class="project-body">
-            <div class="project-desc">
-              <p class="project-meta">
-                Creative Product UI &nbsp;·&nbsp; May 2026
-              </p>
-              <p>
-                Designed a visually engaging beverage brand website UI with
-                interactive product transitions and colorful themed layouts
-                using Figma. Created multiple landing screens for different
-                drink flavors with smooth prototype navigation, modern
-                typography, and attractive product-focused visuals.
-              </p>
-              <div class="project-tags-row">
-                <span class="ptag">Figma</span>
-                <span class="ptag">Brand UI</span>
-                <span class="ptag">Interactive Prototype</span>
-                <span class="ptag">Visual Design</span>
-              </div>
-              <div class="project-btns">
-                <button class="btn-dark">Explore Project</button>
-                <button class="btn-icon">→</button>
-              </div>
-            </div>
-            <div class="project-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=600&q=80"
-                alt="Smoothie Drink UI"
-                class="project-img"
-              />
-              <div class="project-cursor">◉</div>
-            </div>
-          </div>
+        <div class="skill-card__tags">
+          <span class="skill-card__tag">Smart Animate</span>
+          <span class="skill-card__tag">Interactions</span>
+          <span class="skill-card__tag">Transitions</span>
+          <span class="skill-card__tag">User Testing</span>
         </div>
       </div>
-    </section>
 
-    <!-- SERVICES / SKILLS DARK SECTION -->
-    <section class="services-section" id="services">
-      <div class="services-bg">
-        <div class="section-label center light">
-          <span class="star-icon">✦</span> Core Services
+      <!-- Responsive Design Card -->
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon-wrapper responsive-grad">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <span class="skill-card__badge">Advanced</span>
         </div>
-        <h2 class="section-heading center light">
-          Design Solutions<br />Built For Growth
-        </h2>
-
-        <div class="services-grid">
-          <div class="service-card blue">
-            <h3>UI/UX Design</h3>
-            <p>
-              Clean, user-centered interfaces that feel intuitive and look
-              beautiful across all devices.
-            </p>
-            <div class="service-img-slider">
-              <div class="slider-track">
-                <img
-                  src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=200&q=80"
-                  alt=""
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=200&q=80"
-                  alt=""
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=200&q=80"
-                  alt=""
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=200&q=80"
-                  alt=""
-                />
-              </div>
-            </div>
+        <div class="skill-card__content">
+          <h3 class="skill-card__title">Responsive Design</h3>
+          <p class="skill-card__desc">Ensuring visual elements scale fluidly and function flawlessly across mobile,
+            tablet, and desktop viewports.</p>
+        </div>
+        <div class="skill-card__progress-container">
+          <div class="skill-card__progress-info">
+            <span>Proficiency</span>
+            <span>85%</span>
           </div>
-
-          <div class="service-card light-card">
-            <h3>Wireframing &amp; Prototyping</h3>
-            <p>
-              Interactive wireframes and high-fidelity prototypes crafted in
-              Figma to visualize every user flow.
-            </p>
-            <div class="service-img-slider">
-              <div class="slider-track">
-                <img
-                  src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=200&q=80"
-                  alt=""
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=200&q=80"
-                  alt=""
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=200&q=80"
-                  alt=""
-                />
-              </div>
-            </div>
+          <div class="skill-card__progress-bar">
+            <span class="skill-card__progress-fill" data-w="85" style="width: 0%"></span>
           </div>
+        </div>
+        <div class="skill-card__tags">
+          <span class="skill-card__tag">Mobile-First</span>
+          <span class="skill-card__tag">Flexbox & Grid</span>
+          <span class="skill-card__tag">Fluid Layouts</span>
+          <span class="skill-card__tag">Breakpoints</span>
+        </div>
+      </div>
 
-          <div class="service-card blue-grad">
-            <h3>Responsive Web Design</h3>
-            <p>
-              Pixel-perfect, mobile-first responsive designs that adapt
-              beautifully to every screen size.
-            </p>
-            <div class="service-img-slider">
-              <div class="slider-track">
-                <img
-                  src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=200&q=80"
-                  alt=""
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=200&q=80"
-                  alt=""
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=200&q=80"
-                  alt=""
-                />
-              </div>
-            </div>
+      <!-- HTML / CSS Card -->
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon-wrapper html-grad">
+            <i class="fa-solid fa-code"></i>
           </div>
-
-          <div class="service-card light-card">
-            <h3>Design Tools</h3>
-            <p>
-              Proficient in industry-standard design tools for
-              professional-grade output.
-            </p>
-            <div class="service-tools">
-              <div class="tool-bubble"><i class="fa-brands fa-figma"></i></div>
-              <div class="tool-bubble ai">
-                <span style="font-size: 0.7rem">CV</span>
-              </div>
-              <div class="tool-bubble"><i class="fa-brands fa-html5"></i></div>
-              <div class="tool-bubble cc">
-                <i class="fa-brands fa-css3-alt"></i>
-              </div>
-              <div class="tool-bubble framer">
-                <i class="fa-brands fa-js"></i>
-              </div>
-            </div>
+          <span class="skill-card__badge">Proficient</span>
+        </div>
+        <div class="skill-card__content">
+          <h3 class="skill-card__title">HTML5 & CSS3</h3>
+          <p class="skill-card__desc">Translating pixel-perfect designs into clean, semantic markup combined with modern
+            stylesheet layouts.</p>
+        </div>
+        <div class="skill-card__progress-container">
+          <div class="skill-card__progress-info">
+            <span>Proficiency</span>
+            <span>84%</span>
           </div>
+          <div class="skill-card__progress-bar">
+            <span class="skill-card__progress-fill" data-w="84" style="width: 0%"></span>
+          </div>
+        </div>
+        <div class="skill-card__tags">
+          <span class="skill-card__tag">Semantic HTML</span>
+          <span class="skill-card__tag">Flexbox & Grid</span>
+          <span class="skill-card__tag">Transitions</span>
+          <span class="skill-card__tag">Custom Properties</span>
+        </div>
+      </div>
 
-          <div class="service-card cta-card">
-            <div class="trusted-badge">Available for Opportunities</div>
-            <h3>Let's Create Together</h3>
-            <p>
-              Open to freelance, internship, and full-time UI/UX design
-              opportunities worldwide.
+      <!-- JavaScript Card -->
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon-wrapper js-grad">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <span class="skill-card__badge">Proficient</span>
+        </div>
+        <div class="skill-card__content">
+          <h3 class="skill-card__title">JavaScript</h3>
+          <p class="skill-card__desc">Adding interactive features, DOM manipulation, transitions, and basic state
+            functionality to web apps.</p>
+        </div>
+        <div class="skill-card__progress-container">
+          <div class="skill-card__progress-info">
+            <span>Proficiency</span>
+            <span>75%</span>
+          </div>
+          <div class="skill-card__progress-bar">
+            <span class="skill-card__progress-fill" data-w="75" style="width: 0%"></span>
+          </div>
+        </div>
+        <div class="skill-card__tags">
+          <span class="skill-card__tag">DOM Actions</span>
+          <span class="skill-card__tag">ES6 Modules</span>
+          <span class="skill-card__tag">Event Listeners</span>
+          <span class="skill-card__tag">AJAX Fetch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PORTFOLIO / PROJECTS SECTION -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="section-label center">
+      <span class="star-icon">✦</span> My Work
+    </div>
+    <h2 class="section-heading center">
+      Projects That<br />Delivered Real Impact
+    </h2>
+
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-name">H&M Website UI Design</h3>
+          <span class="project-num">01</span>
+        </div>
+        <div class="project-body">
+          <div class="project-desc">
+            <p class="project-meta">
+              Website UI Design &nbsp;·&nbsp; Jan 2026
             </p>
-            <div class="service-cta-btns">
-              <a href="mailto:payalvasavada81@gmail.com"
-                ><button class="btn-dark">Start A Project</button></a
-              >
+            <p>
+              Designed a responsive and visually engaging donut brand website
+              UI in Figma, focusing on modern layouts, colorful branding,
+              user-friendly navigation, and interactive product presentation.
+              Created multiple themed landing page concepts to enhance visual
+              appeal and user experience.
+            </p>
+            <div class="project-tags-row">
+              <span class="ptag">Figma</span>
+              <span class="ptag">Website UI</span>
+              <span class="ptag">Responsive Design</span>
+              <span class="ptag">Prototype</span>
+            </div>
+            <div class="project-btns">
+              <button class="btn-dark">Explore Project</button>
               <button class="btn-icon">→</button>
             </div>
           </div>
+          <div class="project-img-wrap">
+            <img src="PR1.jpeg" alt="Donut Website UI" class="project-img" />
+            <div class="project-cursor">◉</div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- EDUCATION SECTION -->
-    <section class="education-section" id="education">
-      <div class="services-bg testi-bg">
-        <div class="testi-header">
-          <div class="section-label light">
-            <span class="star-icon">✦</span> Academic Background
-          </div>
-          <h2 class="section-heading light">
-            Education &amp;<br />Professional Profile
-          </h2>
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-name">Food Delivery Mobile App</h3>
+          <span class="project-num">02</span>
         </div>
-
-        <div class="testi-cards">
-          <div class="testi-card">
-            <div class="testi-top">
-              <div class="testi-badge">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-              <span class="testi-tag">2023 – 2026</span>
-            </div>
+        <div class="project-body">
+          <div class="project-desc">
+            <p class="project-meta">
+              Mobile App UI Design &nbsp;·&nbsp; Feb 2026 &nbsp;·&nbsp; Zomato
+              Inspired
+            </p>
             <p>
-              <strong style="color: white"
-                >Bachelor of Computer Applications (BCA)</strong
-              >
+              Designed a responsive food delivery mobile app UI in Figma with
+              interactive prototyping, user-friendly navigation, clean visual
+              hierarchy, and modern mobile interface design. Developed screens
+              for browsing, product details, cart management, and checkout
+              experience.
             </p>
-            <p style="margin-top: 8px">
-              Saurashtra University, Rajkot — Completed graduation with focus on
-              computer applications, digital tools, web technologies, and
-              creative problem-solving through practical projects.
+            <div class="project-tags-row">
+              <span class="ptag">Figma</span>
+              <span class="ptag">Mobile UI</span>
+              <span class="ptag">Prototyping</span>
+              <span class="ptag">User Flow</span>
+            </div>
+            <div class="project-btns">
+              <button class="btn-dark">Explore Project</button>
+              <button class="btn-icon">→</button>
+            </div>
+          </div>
+          <div class="project-img-wrap">
+            <img src="PR2.jpeg" alt="Food Delivery App" class="project-img" />
+            <div class="project-cursor">◉</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-name">Travel Landing Page</h3>
+          <span class="project-num">03</span>
+        </div>
+        <div class="project-body">
+          <div class="project-desc">
+            <p class="project-meta">Landing Page UI &nbsp;·&nbsp; Apr 2026</p>
+            <p>
+              Created a responsive travel website landing page in Figma with
+              modern UI components, destination-focused visuals, clean
+              navigation, and interactive booking interface design for
+              enhanced user experience.
             </p>
-            <div class="testi-author" style="margin-top: 24px">
-              <div
-                style="
-                  width: 44px;
-                  height: 44px;
+            <div class="project-tags-row">
+              <span class="ptag">Figma</span>
+              <span class="ptag">Landing Page</span>
+              <span class="ptag">Responsive UI</span>
+              <span class="ptag">Visual Design</span>
+            </div>
+            <div class="project-btns">
+              <button class="btn-dark">Explore Project</button>
+              <button class="btn-icon">→</button>
+            </div>
+          </div>
+          <div class="project-img-wrap">
+            <img src="PR3.jpeg" alt="Travel Landing Page" class="project-img" />
+            <div class="project-cursor">◉</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-name">Smoothie Canned Drink UI Design</h3>
+          <span class="project-num">04</span>
+        </div>
+        <div class="project-body">
+          <div class="project-desc">
+            <p class="project-meta">
+              Creative Product UI &nbsp;·&nbsp; May 2026
+            </p>
+            <p>
+              Designed a visually engaging beverage brand website UI with
+              interactive product transitions and colorful themed layouts
+              using Figma. Created multiple landing screens for different
+              drink flavors with smooth prototype navigation, modern
+              typography, and attractive product-focused visuals.
+            </p>
+            <div class="project-tags-row">
+              <span class="ptag">Figma</span>
+              <span class="ptag">Brand UI</span>
+              <span class="ptag">Interactive Prototype</span>
+              <span class="ptag">Visual Design</span>
+            </div>
+            <div class="project-btns">
+              <button class="btn-dark">Explore Project</button>
+              <button class="btn-icon">→</button>
+            </div>
+          </div>
+          <div class="project-img-wrap">
+            <img src="PR4.jpeg"Smoothie Drink UI"
+              class="project-img" />
+            <div class="project-cursor">◉</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section class="education-section" id="education">
+    <div class="services-bg testi-bg">
+      <div class="testi-header">
+        <div class="section-label light">
+          <span class="star-icon">✦</span> Academic Background
+        </div>
+        <h2 class="section-heading light">
+          Education &amp;<br />Professional Profile
+        </h2>
+      </div>
+
+      <div class="testi-cards">
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-badge">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <span class="testi-tag">2023 – 2026</span>
+          </div>
+          <p>
+            <strong style="color: white">Bachelor of Computer Applications (BCA)</strong>
+          </p>
+          <p style="margin-top: 8px">
+            Saurashtra University, Rajkot — Completed graduation with focus on
+            computer applications, digital tools, web technologies, and
+            creative problem-solving through practical projects.
+          </p>
+          <div class="testi-author" style="margin-top: 24px">
+            <div style="
+                  width: 35px;
+                  height: 35px;
                   background: rgba(255, 255, 255, 0.15);
                   border-radius: 50%;
                   display: flex;
                   align-items: center;
                   justify-content: center;
                   font-size: 1.2rem;
-                "
-              >
-                🎓
-              </div>
-              <div>
-                <strong>86% Percentage</strong>
-                <span>Rajkot, Gujarat</span>
-              </div>
+                ">
+              🎓
+            </div>
+            <div>
+              <strong>86% Percentage</strong>
+              <span>Rajkot, Gujarat</span>
             </div>
           </div>
+        </div>
 
-          <div class="testi-card">
-            <div class="testi-top">
-              <div class="testi-badge">
-                <i class="fa-solid fa-pencil-ruler"></i>
-              </div>
-              <span class="testi-tag">Portfolio Profile</span>
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-badge">
+              <i class="fa-solid fa-graduation-cap"></i>
             </div>
-            <p><strong style="color: white">UI/UX Designer</strong></p>
-            <p style="margin-top: 8px">
-              Creative and detail-oriented designer with strong knowledge of
-              modern UI design principles, wireframing, prototyping, responsive
-              design, and frontend development concepts using Figma, HTML5,
-              CSS3, and JavaScript.
-            </p>
-            <div class="testi-author" style="margin-top: 24px">
-              <div
-                style="
-                  width: 44px;
-                  height: 44px;
+            <span class="testi-tag">2022 – 2023</span>
+          </div>
+          <p>
+            <strong style="color: white">12th Standard Arts</strong>
+          </p>
+          <p style="margin-top: 8px">
+            Deepak High School, Amreli — Completed 12th grade with focus on
+            academic fundamentals, problem-solving, communication skills, and
+            building a strong foundation for higher studies in computer
+            applications and technology.
+          </p>
+          <div class="testi-author" style="margin-top: 24px">
+            <div style="
+                  width: 35px;
+                  height: 35px;
                   background: rgba(255, 255, 255, 0.15);
                   border-radius: 50%;
                   display: flex;
                   align-items: center;
                   justify-content: center;
-                  font-size: 1.1rem;
-                "
-              >
-                ✦
-              </div>
-              <div>
-                <strong>Design Focused</strong>
-                <span>User-Centered Philosophy</span>
-              </div>
+                  font-size: 1.2rem;
+                ">
+              🎓
+            </div>
+            <div>
+              <strong>95.45 PR</strong>
+              <span>Amreli, Gujarat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-badge">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <span class="testi-tag">2020 – 2021</span>
+          </div>
+          <p>
+            <strong style="color: white">10th Standard Arts</strong>
+          </p>
+          <p style="margin-top: 8px">
+            Deepak High School, Amreli — Completed 10th grade with focus on
+            academic fundamentals, problem-solving, communication skills, and
+            building a strong foundation for higher studies in computer
+            applications and technology.
+          </p>
+          <div class="testi-author" style="margin-top: 24px">
+            <div style="
+                  width: 35px;
+                  height: 35x;
+                  background: rgba(255, 255, 255, 0.15);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.2rem;
+                ">
+              🎓
+            </div>
+            <div>
+              <strong>80 PR</strong>
+              <span>Amreli, Gujarat</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CONTACT / FOOTER SECTION -->
-    <section class="footer-cta" id="contact">
-      <div class="services-bg footer-bg">
-        <h2 class="cta-heading">Ready To Create<br />Something Beautiful?</h2>
-        <div class="cta-btns">
-          <a href="mailto:payalvasavada81@gmail.com">
-            <button class="btn-white">Get In Touch</button>
-          </a>
-          <button class="btn-icon dark">→</button>
+  <!-- CONTACT / FOOTER SECTION -->
+  <section class="footer-cta" id="contact">
+    <div class="services-bg footer-bg">
+      <h2 class="cta-heading">Ready To Create<br />Something Beautiful?</h2>
+      <div class="cta-btns">
+        <a href="mailto:payalvasavada81@gmail.com">
+          <button class="btn-white">Get In Touch</button>
+        </a>
+
+        <button class="btn-icon dark">→</button>
+      </div>
+
+      <div class="contact-info-row">
+        <div class="contact-pill">
+          <i class="fa-solid fa-envelope"></i> payalvasavada81@gmail.com
         </div>
-
-        <div class="contact-info-row">
-          <div class="contact-pill">
-            <i class="fa-solid fa-envelope"></i> payalvasavada81@gmail.com
-          </div>
-          <div class="contact-pill">
-            <i class="fa-solid fa-phone"></i> +91 9773041640
-          </div>
-          <div class="contact-pill">
-            <i class="fa-solid fa-location-dot"></i> Amreli, Gujarat, India
-          </div>
+        <div class="contact-pill">
+          <i class="fa-solid fa-phone"></i> +91 9773041640
         </div>
+        <div class="contact-pill">
+          <i class="fa-solid fa-location-dot"></i> Amreli, Gujarat, India
+        </div>
+      </div>
 
-        <div class="footer-nav-cards">
-          <div
-            class="footer-nav-card"
-            onclick="
+      <div class="footer-nav-cards">
+        <div class="footer-nav-card" onclick="
               document
                 .querySelector('#home')
                 .scrollIntoView({ behavior: 'smooth' })
-            "
-          >
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span>
-          </div>
-          <div
-            class="footer-nav-card"
-            onclick="
+            ">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </div>
+        <div class="footer-nav-card" onclick="
               document
                 .querySelector('#skills')
                 .scrollIntoView({ behavior: 'smooth' })
-            "
-          >
-            <i class="fa-solid fa-layer-group"></i>
-            <span>Skills</span>
-          </div>
-          <div
-            class="footer-nav-card"
-            onclick="
+            ">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Skills</span>
+        </div>
+        <div class="footer-nav-card" onclick="
               document
                 .querySelector('#about')
                 .scrollIntoView({ behavior: 'smooth' })
-            "
-          >
-            <i class="fa-solid fa-circle-info"></i>
-            <span>About</span>
-          </div>
-          <div
-            class="footer-nav-card"
-            onclick="
+            ">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>About</span>
+        </div>
+        <div class="footer-nav-card" onclick="
               document
                 .querySelector('#portfolio')
                 .scrollIntoView({ behavior: 'smooth' })
-            "
-          >
-            <i class="fa-solid fa-folder-open"></i>
-            <span>Projects</span>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>Designed &amp; Developed By <a href="#">VASAVADA PAYAL</a></p>
-          <div class="social-links">
-            <a href="#" aria-label="LinkedIn"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-            <a href="mailto:payalvasavada81@gmail.com" aria-label="Email"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-            <a href="tel:+919773041640" aria-label="Phone"
-              ><i class="fa-solid fa-phone"></i
-            ></a>
-            <a href="#" aria-label="Portfolio"
-              ><i class="fa-solid fa-globe"></i
-            ></a>
-          </div>
+            ">
+          <i class="fa-solid fa-folder-open"></i>
+          <span>Projects</span>
         </div>
       </div>
-    </section>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="footer-bottom">
+        <p>Designed &amp; Developed By <a href="#">VASAVADA PAYAL</a></p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:payalvasavada81@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+919773041640" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+          <a href="#" aria-label="Portfolio"><i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
